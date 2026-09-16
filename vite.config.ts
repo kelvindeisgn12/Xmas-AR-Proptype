@@ -36,8 +36,8 @@ function figmaAssetResolver(): Plugin {
 }
 
 export default defineConfig({
-  // GitHub Pages publishes project sites under /<repository-name>/. The Action
-  // supplies this value; local development and custom domains keep the root path.
+  // Cloudflare Pages serves this site from the domain root. Hosts that serve a
+  // project under a subpath can still provide VITE_BASE_PATH at build time.
   base: process.env.VITE_BASE_PATH ?? '/',
   plugins: [
     figmaAssetResolver(),
