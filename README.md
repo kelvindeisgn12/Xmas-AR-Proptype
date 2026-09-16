@@ -1,8 +1,3 @@
-
-# Create 9:16 Camera Screen (Right）
-
-This is a code bundle for Create 9:16 Camera Screen (Right）. The original project is available at https://www.figma.com/design/GYjas7cvdEzyjN81pE8eUU/Create-9-16-Camera-Screen--Right%EF%BC%89.
-
 ## Quick start on this Mac
 
 Double-click `start-local.command`. It installs missing dependencies and opens the Vite development server at <http://127.0.0.1:5173/>.
