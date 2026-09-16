@@ -1,0 +1,11 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* MindAR calculates an oversized, offset video/canvas pair to cover a portrait
+   viewport. Tailwind's preflight otherwise caps dynamically inserted videos at
+   max-width: 100%, leaving most of the camera view black. */
+.mindar-media > video,
+.mindar-media > canvas {
+  max-width: none !important;
+}
