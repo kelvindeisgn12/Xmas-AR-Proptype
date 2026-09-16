@@ -36,6 +36,9 @@ function figmaAssetResolver(): Plugin {
 }
 
 export default defineConfig({
+  // GitHub Pages publishes project sites under /<repository-name>/. The Action
+  // supplies this value; local development and custom domains keep the root path.
+  base: process.env.VITE_BASE_PATH ?? '/',
   plugins: [
     figmaAssetResolver(),
     mindArThreeCompatibility(),
